@@ -21,4 +21,5 @@
 - [Python Koans](https://github.com/gregmalcolm/python_koans)
 
 
-[Day 1 Starts Here](/week-1/day-1.md)
+#### Link to the first day
+[Week 1 Day 1](/week-1/day-1.md)
