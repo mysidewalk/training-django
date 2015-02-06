@@ -9,3 +9,5 @@
 - [Django Shell](https://docs.djangoproject.com/en/1.7/ref/django-admin/)
 
 ### Exercise
+Create a new django app with a simple view that renders a template with the text "Hello world" 
+included on it.

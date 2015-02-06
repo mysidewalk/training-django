@@ -7,3 +7,20 @@
 - [Effective ORM](http://effectivedjango.com/orm.html)
 
 ### Exercise
+Create a new Django app called "library", with 3 models: Member, Book, and, Checkout.
+
+- The Member model should have 3 fields:
+    - ID
+    - Name
+    - Checkout limit
+- The Book model should have 4 fields:
+    - ID
+    - Title
+    - Author
+    - Genre
+- The Checkout model should have 5 fields:
+    - ID
+    - Book
+    - Member
+    - Return by
+    - Returned
