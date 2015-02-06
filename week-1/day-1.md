@@ -11,3 +11,6 @@
 ### Exercise
 Create a new django app with a simple view that renders a template with the text "Hello world" 
 included on it.
+
+### Links
+Next: [Week 1 Day 2](day-2.md)

@@ -24,3 +24,6 @@ Create a new Django app called "library", with 3 models: Member, Book, and, Chec
     - Member
     - Return by
     - Returned
+
+### Links
+Next: [Week 1 Day 3](day-3.md)

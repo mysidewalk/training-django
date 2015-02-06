@@ -13,3 +13,6 @@ Building on the previous day's library app, complete the following:
 
 - Write a query that checks how many books a Member currently has checked out.
 - Using a Q object check how many books a Member has checked out under the genre "history" or "science".
+
+### Links
+Next: [Week 1 Day 4](day-4.md)
