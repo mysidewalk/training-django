@@ -14,7 +14,6 @@
 - Have a PyCharm, Vagrant, and Virtualbox installed on your machine
 - Have a checked out version of this repository (`https://github.com/pjfreeze/platform-engineer-intermediate.git`)
 
-
 ## Additional Resources
 - [Python Koans](https://github.com/gregmalcolm/python_koans)
 - [Django tutorial](https://docs.djangoproject.com/en/1.7/intro/tutorial01/)
