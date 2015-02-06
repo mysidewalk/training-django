@@ -16,10 +16,9 @@
 
 
 ## Additional Resources
+- [Python Koans](https://github.com/gregmalcolm/python_koans)
 - [Django tutorial](https://docs.djangoproject.com/en/1.7/intro/tutorial01/)
 - [DRF tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)
-- [Python Koans](https://github.com/gregmalcolm/python_koans)
-
 
 #### Link to the first day
 Start here: [Week 1 Day 1](/week-1/W1D1.md)
