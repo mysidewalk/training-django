@@ -22,4 +22,4 @@
 
 
 #### Link to the first day
-Start: [Week 1 Day 1](/week-1/W1D1.md)
+Start here: [Week 1 Day 1](/week-1/W1D1.md)
