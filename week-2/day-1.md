@@ -7,3 +7,7 @@
 - [Endpoints](https://docs.google.com/a/mindmixer.com/presentation/d/1bdlV-7HVQaxLgceHDTNwWfNtpj8xm2sPDce9moytahw/edit#slide=id.p)
 
 ### Exercise
+
+
+#### Links
+Next: [Week 2 Day 2](day-2.md)

@@ -4,3 +4,6 @@
 - [Slicing](http://www.diveintopython.net/native_data_types/lists.html#odbchelper.list.slice)
 
 ### Exercise
+
+#### Links
+Next: [Week 3 Day 2](day-2.md)

@@ -7,3 +7,7 @@
 [Permissions](http://www.django-rest-framework.org/api-guide/permissions/)
 
 ### Exercise
+
+
+#### Links
+Next: [Week 3 Day 1](../week-3/day-1.md)

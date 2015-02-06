@@ -7,3 +7,6 @@
 - [Serializers](http://www.django-rest-framework.org/api-guide/serializers/)
 
 ### Exercise
+
+#### Links
+Next: [Week 2 Day 4](day-4.md)

@@ -5,3 +5,6 @@
 - [Pagination](http://www.django-rest-framework.org/api-guide/pagination/)
 
 ### Exercise
+
+#### Links
+Next: [Week 2 Day 3](day-3.md)
