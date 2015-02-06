@@ -1,1 +1,15 @@
-# platform-engineer-intermediate
+# Platform Engineer: Intermediate
+
+## Course Overview
+- Introduction to Django applications
+- Working with Django
+- Django ORM (Object Relational Mapping)
+- Introduction to Django REST Framework
+- Using Views, Filters, Parsers, and Serializers
+- Python Slicing, Generators, OS and file operations
+- Setting up debugging in PyCharm
+
+## Additional Resources
+- [Django tutorial](https://docs.djangoproject.com/en/1.7/intro/tutorial01/)
+- [DRF tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)
+- [Python Koans](https://github.com/gregmalcolm/python_koans)
