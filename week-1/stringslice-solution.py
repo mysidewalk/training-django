@@ -1,8 +1,4 @@
-# You can make slices more complex and powerful by changing how an object responds to a slice.
-# Things that we would often considering needing a subset of is data, organized by a date. 
-# Slicing uses the double under method __getitem__(self, slice_value):
-# Write a __getitem__ method that allows you to specify the string version of indexes
-# (e.g. "zero" instead of "0"). (Don't worry about implementing support for negative numbers)
+# See W1D1.md for the exercise prompt
 
 class StringSlice(object):
     # Define a mapping of string words to the integer counter parts for 0-9

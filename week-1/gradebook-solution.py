@@ -1,3 +1,5 @@
+# See W1D1.md for the exercise prompt
+
 class Gradebook(object):
     # Create a grades list on the Gradebook class (applies to every instance of Gradebook)
     grades = [
