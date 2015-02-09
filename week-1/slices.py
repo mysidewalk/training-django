@@ -35,11 +35,6 @@ class StringSlice(object):
         # self.name if value is a slice
         pass
 
-string_slice = StringSlice('MindMixer')
-result = string_slice['one':'three']
-# Should print the letters 1-2
-print result
-
 
 class Gradebook(object):
     grades = [
@@ -54,8 +49,4 @@ class Gradebook(object):
     def __getitem__(self, key):
         # Put your solution here for returning the proper subset of grades based on if they fall
         # between the start and stop values.
-
-math_class = Gradebook()
-# Should return the grades for any grade with a "date" value between 1 and 9, including 1 and 
-# excluding 9.
-print math_class[1:9]
+        pass
