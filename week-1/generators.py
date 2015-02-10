@@ -27,6 +27,7 @@ print my_first_and_last
 
 
 
+
 # Comprehensions
 # A list comprehension is a statement that creates a list in places. Rather than needing to create
 # a function that can return a complete list, we can write one enclosed statement that results 
@@ -45,11 +46,22 @@ print comp_two
 # numbers.
 original_range = range(100)
 comp_three = [
-    number  # Include
-    for number in original_range  # Item from list
-    if number % 2 == 0  # If it meets this condition
+    number  # transformation
+    for number in original_range  # iteration
+    if number  # condition
 ]
 print comp_three
+
+# You can get a lot more complicated quickly by changing the complexity of the condition or the 
+# iteration item. See the example below:
+comp_four = [
+    c_num * num
+    for num in range(20)
+    for c_num in range(num)
+    if not c_num % 2
+]
+print comp_four
+
 
 
 
@@ -69,8 +81,8 @@ print generator
 
 # The generator has not executed anything in memory, it is still just the generator rather than the
 # result of it. So given a list of 100,000 items, moving that around based on a comprehension would
-# be costly, but if we set up what we need using a generator we are only moving around the idea of 
-# what it will be preventing unnecessary memory usage. 
+# be costly, but if we set up what we need using a generator we are only moving around how to
+# calculate items in the sequence instead of the calculated result
 
 # Another part about generators is that they keep their state, compare that with a normal function
 group = range(10)
