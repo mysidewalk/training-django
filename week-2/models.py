@@ -54,7 +54,10 @@ from django.db import models
 # Examples of a couple different types of fields and configuring their options using our keyword
 # arguments.
 class ModelThree(FullAuditMixin):
-    id = models.AutoField(primary_key=True)
+    # The primary key is the ID column for each model. MindMixer has a custom field named:
+    # "BigAutoField" to ensure that the field uses a big int rather than normal int.
+    # You can load these by importing "libs.fields"
+    id = mm_fields.BigAutoField(primary_key=True)
     # The CharField allows us to create a text field on a model. MindMixer has two constants that
     # help us maintain a consistent length.
     strings = models.CharField(max_length=500)

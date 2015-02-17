@@ -37,3 +37,15 @@ def fn_three(arg1, *args, **kwargs):
 print "\n"
 print "Calling fn_three()"
 fn_three(1, 2, 3, 4, five=5, six=6, seven=7)
+
+
+
+# PyCharm Debugging
+# PyCharm let's us do some interactive debugging within our local environment. We can have the server
+# that normally runs the Python from the vagrant box to instead be served through PyCharm.
+
+# Add the following configuration to your PyCharm configurations:
+# Fill in all of the ___ with the path to your local repository
+
+# Script = ___/mm2/server.py
+# Environment variables = PYTHONUNBUFFERED=1
