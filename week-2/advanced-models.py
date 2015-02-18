@@ -31,12 +31,12 @@ class BookOne(audit.CreationAuditMixin, audit.DeletionMixin):
 # important, but whatever we call the collection is what must be referenced down below in the 
 # BookTwo model.
 class Genres(object):
-    MYSTERY = 'Mystery'
-    SCIENCE = 'Science'
-    HISTORY = 'History'
-    HUMOR = 'Humor'
+    MYSTERY = 'mystery'
+    SCIENCE = 'science'
+    HISTORY = 'history'
+    HUMOR = 'humor'
 
-    choices = (
+    options = (
         (MYSTERY, 'Mystery'),
         (SCIENCE, 'Science'),
         (HISTORY, 'History'),
@@ -54,7 +54,7 @@ class BookTwo(audit.CreationAuditMixin, audit.DeletionMixin):
     author = models.CharField(max_length=mm_fields.SHORT_CHAR_LEN)
     # We can add a "choices" keyword and reference the choices list on the Genres class
     # This will limit the options a book can use to the list from above
-    genre = models.CharField(max_length=mm_fields.SHORT_CHAR_LEN, choices=Genres.choices)
+    genre = models.CharField(max_length=mm_fields.SHORT_CHAR_LEN, choices=Genres.options)
 
     def __unicode__(self):
         return self._format.format(
@@ -80,7 +80,7 @@ class BookTwo(audit.CreationAuditMixin, audit.DeletionMixin):
 class GenericModelOne(models.Model):
     # By default we can use a content_type field which can use a normal BigForeignKey to that table which
     # has a row created for every model in the whole group of apps.
-    content_type = mm_fields.BigForeignKey('django.contenttypes')
+    content_type = mm_fields.BigForeignKey('django.contenttype')
     # we can include a BigIntegerField which holds the same information a Foreign Key does,
     # (the ID or primary key to the other table), not a foreign key because it is not a specific
     # type of object
@@ -105,17 +105,23 @@ class GenericModelTwo(models.Model):
 # The Q object gives us access to more powerful query sets. We can create more powerful conditions
 # based and/or. For instance, we could search for a book with that matches the "mystery" genre or 
 # is by a specific author.
+from django.db import Q, F
 
 Books.objects.filter(
     # Here we are checking for books with the author of me or the title that matches that below.
     Q(author="Peter Freeze") | Q(title="Funny Things I Say")
 )
 
+Books.objects.filter(
+    author__icontains="pet",
+    author__icontains="eze",
+)
+
 # We could do a more complex match based on the inclusion of two things
 Books.objects.filter(
     # We can make sure the author field now contains more than one specific thing
-    Q(author__icontains="pet") & Q(author__icontains="eze"),
-    genre="History"
+    Q(author__icontains="pet") & (Q(author__icontains="eze") | Q(title="Funny Things I Say")),
+    genre="History",
 )
 
 # There are some pretty complex queries using the Q object in the "ContestSummaryFilterBackend" in
