@@ -1,4 +1,4 @@
-## Week 1 Day 4 - PyCharm Debugging
+## PyCharm Debugging
 
 ### Preparation
 - [PyCharm](https://www.jetbrains.com/pycharm/help/running-and-debugging.html)

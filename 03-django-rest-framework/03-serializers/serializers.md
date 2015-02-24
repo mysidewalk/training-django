@@ -13,4 +13,4 @@ For the library app:
 - Configure the MM DynamicModelSerializer to serialize books that are checked out for a member
 
 #### Links
-Next: [Exceptions and Permissions](../exceptions/exceptions.md)
+Next: [Exceptions and Permissions](../04-exceptions/exceptions.md)

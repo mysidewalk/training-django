@@ -1,4 +1,4 @@
-## Week 1 Day 3 - OS and File Operations
+## File Operations and OS
 
 ### Preparation
 - [Standard Libs](https://docs.python.org/2/tutorial/stdlib.html)
