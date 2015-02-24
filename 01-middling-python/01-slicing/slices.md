@@ -1,4 +1,4 @@
-## Week 1 Day 1 - Python Slicing
+## Python Slicing
 
 ### Preparation
 - [Slicing 1](http://stackoverflow.com/questions/509211/explain-pythons-slice-notation/509295#509295)
@@ -26,4 +26,4 @@
     - Solution can be found in [gradebook-solution.py](gradebook-solution.py)
 
 #### Links
-Next: [Week 1 Day 2](W1D2.md)
+Next: [List Comprehensions and Generators](../02-generators/generators.md)

@@ -1,6 +1,6 @@
 from django.db import models
 
-from libs import mm_fields
+from libs import fields as mm_fields
 from libs.model_mixins import audit
 
 

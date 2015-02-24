@@ -1,4 +1,4 @@
-## Week 2 Day 2 - Basic Django ORM
+## Basic Django ORM
 
 ### Preparation
 - [Models](https://docs.djangoproject.com/en/1.7/topics/db/models/)
@@ -26,4 +26,4 @@ Create a new Django app called "library", with 3 models: Member, Book, and, Chec
     - Returned (Boolean)
 
 #### Links
-Next: [Week 2 Day 3](W2D3.md)
+Next: [Django Schema and Data Migrations](../03-migrations/migrations.md)

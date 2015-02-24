@@ -8,4 +8,4 @@
 
 
 #### Links
-Next: [Week 2 Day 1](../week-2/W2D1.md)
+Next: [Introduction to Django](../../02-django/01-introduction/django.md)

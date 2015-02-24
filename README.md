@@ -21,4 +21,4 @@
 - [DRF tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)
 
 #### Link to the first day
-Start here: [Week 1 Day 1](/week-1/W1D1.md)
+Start here: [Python Slicing](/01-middling-python/01-slicing/slices.md)

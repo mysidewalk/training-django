@@ -1,4 +1,4 @@
-## Week 2 Day 4 - Django Migrations
+## Django Migrations
 
 ### Preparation
 - [Migrations](https://docs.djangoproject.com/en/1.7/topics/migrations/)
@@ -16,4 +16,4 @@ For the library app we have been building:
 - Using the shell create at least one object for each model in your database
 
 #### Links
-Next: [Week 3 Day 1](../week-3/W3D1.md)
+Next: [Queries and Django Models: Part 2](../04-queries-and-models/queries-and-models.md)

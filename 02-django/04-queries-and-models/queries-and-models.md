@@ -1,4 +1,4 @@
-## Week 2 Day 3 - Advanced Django ORM
+## Queries and Advanced Django ORM
 
 ### Preparation
 - [Q & F](https://docs.djangoproject.com/en/1.7/ref/models/queries/)
@@ -18,4 +18,4 @@ Building on the previous day's library app, complete the following:
     (include the content_type and object_id fields)
 
 #### Links
-Next: [Week 2 Day 4](W2D4.md)
+Next: [Introduction to Django REST Framework](../../03-django-rest-framework/01-introduction/introduction.md)

@@ -19,4 +19,4 @@ Working out of [file-operations.py](file-operations.py)
     open and print to screen the smallest `.csv` file by size
 
 #### Links
-Next: [Week 1 Day 4](W1D4.md)
+Next: [Debugging in PyCharm](../04-debugging/debugging.md)

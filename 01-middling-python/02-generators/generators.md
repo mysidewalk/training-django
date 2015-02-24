@@ -17,4 +17,4 @@ We are working out of [generators.py](generators.py)
     set at `new_dictionary['a.a']` with the proper value
 
 #### Links
-Next: [Week 1 Day 3](W1D3.md)
+Next: [File Operations and OS](../03-files-and-os/file-operations.md)

@@ -40,7 +40,7 @@ class ExampleOneViewSet(rf_mixins.ListModelMixin, rf_mixins.CreateModelMixin,
 # filter backend can use the "filter_queryset()" method including the 4 standard arguments. It is 
 # important that every filter backend return a queryset
 
-# We could create a filter backend that prevents members from seeing checkouts of other methods
+# We could create a filter backend that prevents members from seeing checkouts of other members
 # unless they were marked as "staff".
 from rest_framework import filters
 from libs.parsers import parameters
@@ -55,7 +55,7 @@ class ExampleTwoFilterBackend(filters.BaseFilterBackend):
 
         # If the request did not specify a member, and the requesting user is not a staff member
         # filter the queryset to match only the requesting user
-        if not not params['member'] and not request.user.staff:
+        if not params['member'] and not request.user.staff:
             queryset = queryset.filter(member=request.user)
 
         return queryset
@@ -120,7 +120,7 @@ from rest_framework import filters
 
 
 class ExampleFiveViewSet(rf_mixins.ListModelMixin, mm_mixins.MindMixerViewSet):
-    model = ExampleFour
+    model = ExampleFive
     # You will need to include the DRF SearchFilter in order to allow searching via the key 'search'
     filter_backends = (
         filters.SearchFilter,
@@ -130,5 +130,5 @@ class ExampleFiveViewSet(rf_mixins.ListModelMixin, mm_mixins.MindMixerViewSet):
     search_fields = (
         'name',
         'description',
-        'create_by__first_name'
+        'created_by__first_name'
     )

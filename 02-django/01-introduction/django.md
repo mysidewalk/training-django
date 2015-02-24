@@ -1,4 +1,4 @@
-## Week 2 Day 1 - Introduction to Django
+## Introduction to Django
 
 ### Preparation
 - [Django Docs](https://www.djangoproject.com/start/)
@@ -13,4 +13,4 @@ Create a new django app with a simple view that renders a template with the text
 included on it.
 
 #### Links
-Next: [Week 2 Day 2](W2D2.md)
+Next: [Django Models: Part 1](../02-models/models.md)

@@ -31,7 +31,7 @@ cd /vagrant/mm2 && python manage.py makemigrations library
 cd /vagrant/mm2 && python manage.py migrate
 
 # The following command will run only migrations for the library app
-cd /vagrant/mm2 && python manage.py migrate library
+cd /vagrant/mm2 && python manage.py makemigrations library
 
 # After you have run the migrate command without errors you should be able to open pgAdmin and see
 # your new tables as well as create and populate content via the interactive shell.
