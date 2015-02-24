@@ -1,4 +1,4 @@
-## Week 3 Day 3 - Renderers, Parsers, Serializers
+## Serializers, Renderers, and Parsers
 
 ### Preparation
 - [JSON API](http://jsonapi.org/)
@@ -13,4 +13,4 @@ For the library app:
 - Configure the MM DynamicModelSerializer to serialize books that are checked out for a member
 
 #### Links
-Next: [Week 3 Day 4](W3D4.md)
+Next: [Exceptions and Permissions](../04-exceptions/exceptions.md)

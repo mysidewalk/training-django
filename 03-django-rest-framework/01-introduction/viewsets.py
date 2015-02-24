@@ -43,18 +43,6 @@ class ExampleModelTwoViewSet(rf_mixins.ListModelMixin, CreateModelMixin, ModifyM
 
 
 
-## Interacting with Angular.js
-# DRF allows us to create a single endpoint per resource (model) that our Angular.js app can
-# work with. In angular we can create a new "resource" which allows us to call standard methods
-# on while it handles all of the http request information, including setting the headers, query
-# parameters, and request body.
-
-# Each resource then has the ability to make GET, POST, PUT/PATCH, DELETE requests. This is where
-# DRF's single class based view handles the interpretation of that request into a method on the
-# view set that it will call (e.g. get, list, save, update, delete)
-
-
-
 ## URLs
 # We are going to focus on how MindMixer leverages URLs and therefore some basic permissions
 # (covered more in depth later). In order to define a new API URL at MindMixer, we must do a few
@@ -89,3 +77,15 @@ for resource in app_resources.get_resources():
     router.register(resource.noun, resource.viewset)
 
 urlpatterns = router.urls
+
+
+
+## Interacting with Angular.js
+# DRF allows us to create a single endpoint per resource (model) that our Angular.js app can
+# work with. In angular we can create a new "resource" which allows us to call standard methods
+# on while it handles all of the http request information, including setting the headers, query
+# parameters, and request body.
+
+# Each resource then has the ability to make GET, POST, PUT/PATCH, DELETE requests. This is where
+# DRF's single class based view handles the interpretation of that request into a method on the
+# view set that it will call (e.g. get, list, save, update, delete)

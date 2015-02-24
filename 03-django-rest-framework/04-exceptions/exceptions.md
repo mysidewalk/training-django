@@ -1,4 +1,4 @@
-## Week 3 Day 4 - Exceptions, Permissions
+## Exceptions, Permissions
 
 ### Preparation
 [Exceptions](http://www.django-rest-framework.org/api-guide/exceptions/)
