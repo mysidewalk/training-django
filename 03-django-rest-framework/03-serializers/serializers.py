@@ -1,3 +1,17 @@
+## Serializing - What it does
+# Our serialization occurs in a multi-step process. THe first of which is converting every field
+# and object into a primitive type that is acceptable in JSON. Those types include, but are not
+# limited to: lists, dictionaries, booleans, strings, integers, floats, dates and datetimes.
+
+# Serialization also keeps things as ordered dictionaries because order does matter. It ensures that
+# our sorting/ordering of an API maintains itself as it goes through this process.
+
+# The second piece here is converting Python's snake case property names into JavaScript's
+# camelCase. And lastly, the whole thing is then converted into JSON before being included in an
+# http response
+
+
+
 ## Old Style - Setting a "serializer_class" on the view set
 # What I'll refer to as "old style" serialization is how many of our view sets have implemented 
 # their serialization as of February 2015. The strategy here is to specify a queryset that has been
@@ -80,15 +94,15 @@ class ExampleTwoViewSet(rf_mixins.ListModelMixin, mm_mixins.MindMixerViewSet):
 
 
 
-## Serializing - What it does
-# Our serialization occurs in a multi-step process. THe first of which is converting every field
-# and object into a primitive type that is acceptable in JSON. Those types include, but are not
-# limited to: lists, dictionaries, booleans, strings, integers, floats, dates and datetimes.
+## JSON API
+# According the spec, a JSON API response must have a top level JSON object, with a collection of
+# data resources, or error attributes. Each resource object should have a type and id property.
 
-# Serialization also keeps things as ordered dictionaries because order does matter. It ensures that
-# our sorting/ordering of an API maintains itself as it goes through this process.
+# The dictionary of how objects should be nested and related is stored in the "links" property of 
+# the top level, the "linked" object the unique objects that are not the primary resource stored
+# by type.
 
-# The second piece here is converting Python's snake case property names into JavaScript's
-# camelCase. And lastly, the whole thing is then converted into JSON before being included in an
-# http response
-
+# Our JSON API deserializer then moves to match the linked objects to the primary resource based
+# on the definition provided in the links section. We use ID's to match objects and types to 
+# indicate what resource it is. Each item also includes a "href" property which links to that unique
+# object in the API. 
