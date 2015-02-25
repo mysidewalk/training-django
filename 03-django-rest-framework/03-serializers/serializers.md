@@ -9,10 +9,9 @@
 ### Exercise
 For the library app:
 
-- 
-- Add the `DynamicModelSerializer` to the books view set and include the `created_by` and
+1. Add the `DynamicModelSerializer` to the books view set and include the `created_by` and
     `checkouts` fields with the API response
-- Add the `SerializerOptions` to the checkout view set and by default include both book and member
+2. Add the `SerializerOptions` to the checkout view set and by default include both book and member
 
 #### Links
 Next: [Exceptions and Permissions](../04-exceptions/exceptions.md)

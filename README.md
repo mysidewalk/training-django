@@ -1,13 +1,16 @@
 # Platform Engineer: Intermediate
 
 ## Course Overview
-- Introduction to Django applications
-- Working with Django
-- Django ORM (Object Relational Mapping)
-- Introduction to Django REST Framework
-- Using Views, Filters, Parsers, and Serializers
 - Python Slicing, Generators, OS and file operations
 - Setting up debugging in PyCharm
+- Introduction to Django
+- Creating models with Django
+- Scheme and data migrations
+- Queries and Advanced Models
+- Introduction to Django REST Framework's view sets
+- Enhancing your view sets with filters, pagination, etc
+- Adding serialization
+- Include API specific permissions and exceptions
 
 ## Preparation
 - Have an understanding of Python Syntax
