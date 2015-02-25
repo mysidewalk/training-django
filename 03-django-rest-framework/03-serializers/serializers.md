@@ -2,15 +2,17 @@
 
 ### Preparation
 - [JSON API](http://jsonapi.org/)
+- [Serializers](http://www.django-rest-framework.org/api-guide/serializers/)
 - [Renderers](http://www.django-rest-framework.org/api-guide/renderers/)
 - [Parsers](http://www.django-rest-framework.org/api-guide/parsers/)
-- [Serializers](http://www.django-rest-framework.org/api-guide/serializers/)
 
 ### Exercise
 For the library app:
 
-- Add a serializer so that the checkouts include the member but not the book
-- Configure the MM DynamicModelSerializer to serialize books that are checked out for a member
+- 
+- Add the `DynamicModelSerializer` to the books view set and include the `created_by` and
+    `checkouts` fields with the API response
+- Add the `SerializerOptions` to the checkout view set and by default include both book and member
 
 #### Links
 Next: [Exceptions and Permissions](../04-exceptions/exceptions.md)
