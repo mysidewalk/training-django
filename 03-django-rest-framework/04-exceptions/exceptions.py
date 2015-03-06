@@ -5,7 +5,8 @@
 from rest_framework.mixins import mixins as rf_mixins
 from libs import viewset_mixins as mm_mixins
 
-class ExampleOneViewSet(rf_mixins.ListModelMixin, mm_mixins.MindMixerViewSet):
+class ExampleOneViewSet(rf_mixins.ListModelMixin, mm_mixins.CreateModelMixin,
+                        mm_mixins.MindMixerViewSet):
     model = ExampleOneViewSet
     queryset = model.objects.all()
 
@@ -51,8 +52,8 @@ class ExampleOneViewSet(rf_mixins.ListModelMixin, mm_mixins.MindMixerViewSet):
     # We could for example, update the pre_save or pre_delete, but in general it makes sense not to
     # eliminate the default behavior, see an example of how to accomplish that below:
     def pre_save(self, obj, created=False):
-        foo = obj
-        super(ExampleOneViewSet, self).create(obj, created)
+        created == obj.id
+        super(ExampleOneViewSet, self).pre_save(obj, created)
 
 
 
@@ -80,6 +81,7 @@ class ExampleTwoViewSet(rf_mixins.ListModelMixin, mm_mixins.MindMixerViewSet):
     # value fails the request.
     permission_classes = (
         ExampleTwoPermission,
+        ResourcePermissions,
     )
 
 
@@ -109,10 +111,9 @@ class ExampleThreeViewSet(rf_mixins.ListModelMixin, mm_mixins.CreateModelMixin,
     # by calling super on create (default behavior)
     def list(self, request):
         if (request.user.checkouts.count() >= request.user.checkout_limit) {
-            exception = UhOh('Custom detail')
-            raise exception
+            raise UhOh('Custom detail')
         }
-        super(ExampleOneViewSet, self).create(request)
+        super(ExampleOneViewSet, self).list(request)
 
 
 
@@ -120,4 +121,3 @@ class ExampleThreeViewSet(rf_mixins.ListModelMixin, mm_mixins.CreateModelMixin,
 # Reading through their documentation should be a good introduction to it. We do not currently have
 # any instance in our product where we throttle any requests. Knowing that you can set a limit
 # or a rate is good to know for the future when this becomes something we may actually use in house.
-
